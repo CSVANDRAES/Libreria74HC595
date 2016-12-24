@@ -1,0 +1,2 @@
+# Libreria74HC595
+Librería para C.I 74HC595-PIC16F628A CCS 
