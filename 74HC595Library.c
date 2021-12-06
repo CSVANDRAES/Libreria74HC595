@@ -2,32 +2,32 @@
 Datos de desarrollador:
 Nombre:Carlos Vergara Andraes 
 Correo:carlos.vergara.andraes@gmail.com 
-Fecha creación:Julio-2016
+Fecha creaciï¿½n:Julio-2016
 
-Descripción de librería:
+Descripciï¿½n de librerï¿½a:
 
 Libreria para C.I 74HC595 entrada serial 8 bit y salida paralela
 (8-bit serial-in, serial or parallel-out shift register with outputlatches; 3-state)
 
-1.-Acerca de esta librería y cómo usarla: 
+1.-Acerca de esta librerï¿½a y cï¿½mo usarla: 
 
-Fue creada para mostrar números del 0 al 9 en display de 7 segmentos cátodo común.
+Fue creada para mostrar nï¿½meros del 0 al 9 en display de 7 segmentos cï¿½todo comï¿½n.
 Para utilizarla se debe declarar 3 pines del microcontrolador, como ejemplo ver punto 2. 
-Para llamar este procedimiento solo basta con pasar un valor de 0 a 9 según deseamos 
+Para llamar este procedimiento solo basta con pasar un valor de 0 a 9 segï¿½n deseamos 
 visualizar en display de 7 segmentos, a modo de prueba mostraremos el valor "0" 
 en display de 7 segmentos, para esto debemos escribir en nuestro programa: LIB74HC595(0);,
 y asi sucesivamente para pasar otros valores (LIB74HC595(3);LIB74HC595(7,);, ect).
 
-2.-Declaración de pines de E/S PIC16F628A:
+2.-Declaraciï¿½n de pines de E/S PIC16F628A:
 
-Descripción de pines definidos en microcontrolador y su simil de 74HC595.
+Descripciï¿½n de pines definidos en microcontrolador y su simil de 74HC595.
 
 PIC16F628A        |     C.I 74HC595 
 SPI74HC595_DATA         DS          
 SPI74HC595_LATCH        ST_CP
 SPI74HC595_CLOCK        SH_CP
 
-Definición de nombres en código CCS
+Definiciï¿½n de nombres en cï¿½digo CCS
 
 #define SPI74HC595_LATCH  PIN_A2
 #define SPI74HC595_CLOCK  PIN_A3
@@ -45,7 +45,7 @@ LIB74HC595(7);
 LIB74HC595(8);
 LIB74HC595(9);
 
-4.-Array de representación de números 0-9
+4.-Array de representaciï¿½n de nï¿½meros 0-9
 byte const segDisplay[2][8]={{ 1,0,1,1,1,1,1,1},{0,0,0,0,0,1,1,0}};
 */
 void LIB74HC595(int8 num){
@@ -71,3 +71,5 @@ void LIB74HC595(int8 num){
       }
  return;
 }
+
+//test1
